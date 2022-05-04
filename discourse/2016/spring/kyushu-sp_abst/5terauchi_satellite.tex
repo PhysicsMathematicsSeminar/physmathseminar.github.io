@@ -1,0 +1,42 @@
+\documentclass[12pt]{jsarticle}
+\usepackage[top=30truemm,bottom=30truemm,left=25truemm,right=25truemm]{geometry}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\lhead{}
+\rhead{}
+\chead{}
+\lfoot{}
+\rfoot{\fontsize{12pt}{0pt}\selectfont
+九州春の談話会}%　ここに談話会名を入力してください。
+\cfoot{\thepage}
+\renewcommand{\labelitemi}{$\bigcirc$}
+\makeatletter
+\makeatother 
+%
+%
+%========講演者の方はここより下の部分の必要事項を入力してください。==============
+%
+%
+\title{人工衛星の制御}% ここに講演タイトルを入力してください。
+\author{寺内優人\\%　ここに名前を入力してください。
+{\small
+九州大学工学部機械航空工学科2年　% ここに大学学部学科学年を入力してください。
+}}
+\date{2016年6月26日}%　談話会の日付を入力してください。
+\begin{document}
+\maketitle
+\thispagestyle{fancy}
+\section{はじめに}
+%　本文を入力してください。
+物理の理論を学んでいても、その理論が実際にどのように使われているかを詳しく知っている人は意外と多くないと思います。この講演では人工衛星の姿勢制御について、姿勢を変更する機械と特に姿勢を把握するセンサーの一種であるFOG(Fiber-Optic Gyroscopes)と呼ばれるものの仕組みを元になっている理論、ひとみの事故や
+九州大学の超小型人工衛星つくし(QSAT-EOS)などを交えて説明しようと思います。 
+\section{講演内容}
+%　本文を入力してください。
+まず人工衛星の姿勢制御に使われている機械を運用中の人工衛星、ひとみの事故、つくしなどと交えて紹介します。その後、衛星がどのように自らの姿勢を検知しているのかをセンサーの仕組みとその基礎にある理論を用いて説明します。人工衛星に詳しくないような人でも理解できるような講演にするので、普段そのような話題になじみがない人でも理解できる内容となっています。一部に一般相対性理論を用いて説明する所もありますが、ある程度物理を学んでいれば理解できると思います。
+\begin{thebibliography}{9}%　参考文献を入力してください。
+\bibitem{}ランダウ・リフシッツ, 『場の古典論電気力学, 特殊および一般相対性理論』(東京図書)
+\bibitem{}国立研究開発法人宇宙航空研究開発機構, 『Ｘ線天文衛星「ひとみ」（ASTRO-H） の状況について（その2）』(2016/5/10)\footnote{[2]については発表当日までに出た最新のものを利用する予定です。}
+\end{thebibliography}
+\end{document}
