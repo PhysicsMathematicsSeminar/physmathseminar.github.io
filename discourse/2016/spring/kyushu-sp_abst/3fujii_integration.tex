@@ -1,0 +1,50 @@
+\documentclass[12pt]{jsarticle}
+\usepackage[top=30truemm,bottom=30truemm,left=25truemm,right=25truemm]{geometry}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\lhead{}
+\rhead{}
+\chead{}
+\lfoot{}
+\rfoot{\fontsize{12pt}{0pt}\selectfont
+九州春の談話会}%　ここに談話会名を入力してください。
+\cfoot{\thepage}
+\renewcommand{\labelitemi}{$\bigcirc$}
+\makeatletter
+\makeatother 
+%
+%
+%========講演者の方はここより下の部分の必要事項を入力してください。==============
+%
+%
+\title{行きはよいよい帰りは怖い!?\\
+{\large
+微分可能だがその導関数が積分できないような関数の構成}}% ここに講演タイトルを入力してください。
+\author{藤井幹大\\%　ここに名前を入力してください。
+{\small
+九州大学理学部数学科３年　% ここに大学学部学科学年を入力してください。
+}}
+\date{2016年6月25日}%　談話会の日付を入力してください。
+\begin{document}
+\maketitle
+\thispagestyle{fancy}
+\section{はじめに}
+数学の分野で解析というと、微分積分をはじめとし、数学的対象の量を測ることや極限操作をする分野の総称です。解析学は物理学やその他の自然科学、また統計学などさまざまな数学の分野で利用されています。ですからこの講演をお聞きの方々も解析学にはなじみがあるのではないでしょうか。そこでこの講演では微分積分学の（理系大学生なら）誰もが知っているであろう事柄を題材にして興味深い例などを考えてみたいと思います。%　本文を入力してください。
+\section{講演内容}
+関数$F(x)$は実軸上の微分可能な未知関数とします。このとき$F(x)$が常微分方程式　
+\begin{eqnarray*}
+F^{\prime}(x)=f(x)
+\end{eqnarray*}
+をみたし、$f(x)$が既知であるとき関数$F(x)$を求めよ、といわれたら
+\begin{eqnarray*}
+F=\int_{0}^{x} f(t)dt
+\end{eqnarray*}
+とすればよいと思う方もいらっしゃると思います。しかしながらこれは一般には正しくない、というのが今回のテーマなのです。\\
+\ \ 講演を通して数学者Volterraが考案した“微分可能だがその導関数が積分できない関数”を構成しますが、その過程でしばしばReimann積分の限界を感じさせる箇所がでてきます。それと同時に今日の解析学で欠かすことの出来ない、測度論やLebesgue積分がなぜ生まれてきたのかを納得できる一面も垣間みることが出来ます。現代では、Volterraの例はLebesgue積分論の言葉を使って述べられますが、今回はReimann積分の言葉だけで述べたいと思います。高校の知識プラスαくらいでも聞けるような内容ですのでお気軽にお楽しみください。(参考文献は追加されることがあります)%　本文を入力してください。
+\begin{thebibliography}{9}%　参考文献を入力してください。
+\bibitem{sugiura}杉浦光男(1980)解析入門Ⅰ
+\bibitem{kosiba}小柴洋一\ Volterra と H.$\mathrm{J}$.Smithの論文に見られる、その導関数がRiemann積分可能でない関数の古典例について\\ http://www.kurims.kyoto-u.ac.jp/~kyodo/kokyuroku/contents/pdf/1064-1.pdf\\ (2016.5.16 アクセス)
+\end{thebibliography}
+\end{document}

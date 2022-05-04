@@ -1,0 +1,54 @@
+\documentclass[12pt]{jsarticle}
+\usepackage[top=30truemm,bottom=30truemm,left=25truemm,right=25truemm]{geometry}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\lhead{}
+\rhead{}
+\chead{}
+\lfoot{}
+\rfoot{\fontsize{12pt}{0pt}\selectfont
+春の大談話会2016 in 九州%　ここに談話会名を入力してください。
+}
+\cfoot{\thepage}
+\renewcommand{\labelitemi}{$\bigcirc$}
+\makeatletter
+\makeatother 
+%
+%
+%========講演者の方はここより下の部分の必要事項を入力してください。==============
+%
+%
+\title{すべての電磁波が見えるようになりたい！}% ここに講演タイトルを入力してください。
+\author{丸石崇史\\%　ここに名前を入力してください。
+{\small
+九州大学理学部地球惑星科学科 学部4年　% ここに大学学部学科学年を入力してください。
+}}
+\date{2016年6月26日}%　談話会の日付を入力してください。
+\begin{document}
+\maketitle
+\thispagestyle{fancy}
+\section{はじめに}
+\begin{quotation}
+Maxwell方程式を暗記して得意気なそこの君。可視光しか見えないんだろう？
+\end{quotation}
+われわれが見ることのできる電磁波はほんの一部の波長に過ぎない。 何気ない日常も、もしX線・電波などを通して見ることができたらきっと一変するだろう。
+携帯の電波が繋がりにくいのも目で見て納得できるだろうし、電子レンジが眩しくてしょうがないだろうし、昼間でも星が見えるかもしれない。
+そんなわくわくの日常へ近づくための第一歩。
+
+%　本文を入力してください。
+\section{講演内容}
+本講演では電磁波を鮮明にイメージできるようになることを目的として、ひたすらに具体的な計算を行う。\footnote{散乱については福谷くんの講演にお任しようと思う。}。
+光ファイバーの中をどう伝播するのか、アンテナからはどう放射されるのか、さらには回転運動する電荷からの放射などを議論する予定である。
+
+アニメーションと概念図を提示した後に数式での解説を行う。 ベクトル解析の知識があるとよいが、そうでなくても話の流れが掴めるよう講演する。
+
+%　本文を入力してください。
+\begin{thebibliography}{9}%　参考文献を入力してください。
+\bibitem{jackson} ジャクソン 『電磁気学(上) (下)』原書第3版（吉岡書店, 2002）
+\bibitem{bakoten} ランダウ, リフシッツ 『場の古典論』原書第6版（東京図書株式会社, 1978）
+\bibitem{sunagawa} 砂川重信 『理論電磁気学』（紀伊國屋書店, 1999）
+\bibitem{sakurai} J.J.Sakurai 『現代の量子力学(下)』（吉岡書店, 1989）
+\end{thebibliography}
+\end{document}
