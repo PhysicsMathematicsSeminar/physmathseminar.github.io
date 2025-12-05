@@ -6,6 +6,9 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta http-equiv="content-language" content="ja" />
     <meta name="viewport" content="width=device-width, maximum-scale=1.0, user-scalable=yes" />
+    <script id="MathJax-script" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
 
     <title>数物セミナー 大岡山談話会</title>
 
@@ -98,6 +101,12 @@
         /* For IE 6/7 (trigger hasLayout) */
         .boxContainer {
             zoom: 1;
+        }
+
+        /* 表のタイトル部分のフォントサイズを大きくするCSS */
+        .talk-title {
+            font-size: 20px; 
+            font-weight: bold; /* オプション：太字にするとより強調されます */
         }
     </style>
 </head>
@@ -210,11 +219,6 @@
                             <td style="border: 1px solid black; padding: 8px;">9:00 -</td>
                             <td colspan="2" style="border: 1px solid black; padding: 8px; text-align: center;">受付開始</td>
                       </tr>
-                        <tr>
-                            <th>9:30〜9:40</th>
-                            <th>開会式</th>
-                            <th>-</th>
-                        </tr>
                       <tr>
             <td style="border: 1px solid black; padding: 8px;">9:30 - 9:40</td>
             <td style="border: 1px solid black; padding: 8px; text-align: center;">開会式</td>
@@ -223,7 +227,12 @@
         <tr>
             <td rowspan="2" style="border: 1px solid black; padding: 8px;">9:40 - 10:40</td>
             <td style="border: 1px solid black; padding: 8px; text-align: center;">講演 1 (会場A)</td>
-            <td style="border: 1px solid black; padding: 8px; text-align: center;">TBA</td>
+            <td style="border: 1px solid black; padding: 8px; text-align: center;">
+                <span class="talk-title">
+        Lie代数の表現と量子群の結晶 (大域) 基底 (発表者: kosei) <br />
+    </span>
+    概要：量子群 $U_q(\mathfrak{g})$ の表現の結晶基底は Lie 代数の表現も記述する．本講演の前半では，Young tableaux
+を用いた$\mathfrak{g} l_n$ の表現論への具体的な応用例を，後半ではその理論的背景を紹介する．</td>
         </tr>
         <tr>
             <td style="border: 1px solid black; padding: 8px; text-align: center;">講演 1 (会場B)</td>
@@ -273,81 +282,6 @@
             <td style="border: 1px solid black; padding: 8px;">16:50 - 17:30</td>
             <td colspan="2" style="border: 1px solid black; padding: 8px; text-align: center;">懇親会</td>
         </tr>
-                    </tbody>
-                    <tbody>
-                        <tr>
-                            <th>9:40〜10:50</th>
-                            <th align="center">
-                                ポアンカレ群の表現<br />
-                                (講演者:寺下誠)
-                            </th>
-                            <th align="left">
-                                相対論的な粒子の量子力学的状態を定式化しようとすると，ポアンカレ群の既約ユニタリ表現が重要となります．本講演では，誘導表現を紹介して，ポアンカレ群の既約ユニタリ表現を調べていこうと思います．
-                            </th>
-                        </tr>
-                    </tbody>
-                    <tbody>
-                        <tr>
-                            <th>11:00〜12:10</th>
-                            <th align="center">
-                                ブラックホームの髪の毛<br />
-                                (講演者:竹下颯馬)
-                            </th>
-                            <th align="left">
-                                無毛定理で知られる3次元ブラックホールですが，高次元ブラックホールでは成立しません．また，３次元の場合でも実は隠れた髪の毛(soft hair)が生えています．
-                                想像以上にふさふさなブラックホールの髪の毛についてお話しします．
-                            </th>
-                        </tr>
-                    </tbody>
-                  <tbody>
-                        <tr>
-                            <th>12:10～13:30</th>
-                            <th>昼休憩　(昼食は各自でお願いします)</th>
-                            <th>-</th>
-                        </tr>
-                    </tbody>
-                    <tbody>
-                        <tr>
-                            <th>13:30〜14:40</th>
-                            <th align="center">
-                                暗号理論入門 <br />
-                                （講演者:松下大地）
-                            </th>
-                            <th align="left">
-                                暗号は現代の情報セキュリティにおいて中核的な役割を果たしています．現実の暗号はしばしば経験や実験から安全だと評価される一方で，部分的には理論的な安全性を定式化することができます．暗号の基礎概念から，理論が扱える部分の定義および証明補法，さらに発展的な方式までを概観します．
-                            </th>
-                        </tr>
-                    </tbody>
-                    <tbody>
-                        <tr>
-                            <th>14:50〜16:00</th>
-                            <th align="center">
-                                複素線形代数<br />
-                                (講演者：すてふ)
-                            </th>
-                            <th align="left">
-                                実はベクトル空間Vを複素ベクトル空間と思うことにするというのはしばしば行われますが，そこには深い幾何学が潜んでいます．今回は線形代数から始めていい感じの複素幾何学の入門をできればと思います．
-                            </th>
-                        </tr>
-                    </tbody>
-                    <tbody>
-                        <tr>
-                            <th>16:10～17:20</th>
-                            <th align="center">
-                                エクスパンダーグラフについて<br />
-                                (講演者:うめこぶ)
-                            </th>
-                            <th align="left">
-                                エクスパンダーグラフとは，少ない辺の数に対して，高い連結性を持った有限グラフである．ランダムなグラフはほとんどエクスパンダーである一方，具体的なエクスパンダーの構成は非常に難しい．その構成には深い群論が必要であり，並びに関連する数学について話す．
-                            </th>
-                        </tr>
-                    </tbody>
-                    <tbody>
-                        <tr>
-                            <th>17:20～17:30</th>
-                            <th>閉会式</th>
-                            <th>-</th>
-                        </tr>
                     </tbody>
                 </table>
 
