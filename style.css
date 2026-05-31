@@ -642,3 +642,172 @@ table.example tbody tr:hover {
 #main #container #contents .links2 .links2f td {
 	font-size: 16px;
 }
+@media screen and (max-width: 768px) {
+  body {
+    -webkit-text-size-adjust: 100%;
+    background-image: none;
+  }
+
+  #main,
+  #header-inner,
+  #container,
+  #contents,
+  #menu,
+  #headtable,
+  #news {
+    width: auto !important;
+    max-width: 100% !important;
+    box-sizing: border-box;
+  }
+
+  #main {
+    border-left: 0;
+    border-right: 0;
+  }
+
+  #container {
+    padding: 8px;
+  }
+
+  #contents,
+  #menu {
+    float: none;
+    clear: both;
+    margin: 0;
+    padding: 0;
+  }
+
+  #contents {
+    line-height: 170%;
+  }
+
+  #contents p {
+    padding-left: 0;
+  }
+
+  #header-inner {
+    overflow: hidden;
+  }
+
+  #headtable,
+  #headtable tbody,
+  #headtable tr,
+  #headtable td {
+    display: block;
+    width: 100% !important;
+  }
+
+  #table-left,
+  #table-right {
+    text-align: center;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  #header-menu {
+    height: auto;
+    overflow: hidden;
+  }
+
+  #header-menu ul {
+    overflow: hidden;
+  }
+
+  #header-menu li {
+    width: 50%;
+    float: left;
+  }
+
+  #header-menu li a {
+    width: auto;
+    min-height: 32px;
+    line-height: 20px;
+    padding: 8px 0;
+    box-sizing: border-box;
+  }
+
+  #main img,
+  #contents img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  #contents img[style*="float"],
+  #contents a img[style*="float"] {
+    float: none !important;
+    display: block;
+    margin: 10px auto !important;
+  }
+
+  #contents table {
+    max-width: 100%;
+    overflow-x: auto;
+  }
+
+  #contents table:not(.simple),
+  #contents table:not(.simple) tbody,
+  #contents table:not(.simple) tr {
+    display: block;
+  }
+
+  #contents table:not(.simple) {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  table.simple {
+    width: 100% !important;
+    margin: 1.5em 0;
+  }
+
+  table.simple,
+  table.simple tbody,
+  table.simple tr,
+  table.simple td {
+    display: block;
+    box-sizing: border-box;
+  }
+
+  table.simple td {
+    width: 100% !important;
+    padding: 0.7em 0.8em;
+  }
+
+  table.simple td:first-child {
+    font-weight: bold;
+    border-bottom: 0;
+    padding-bottom: 0.2em;
+  }
+
+  #contents dl.topics dt,
+  #contents dl.topics dd {
+    float: none;
+    width: auto;
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  .tblist {
+    margin-left: 0;
+  }
+
+  #menu {
+    margin-top: 20px;
+  }
+
+  #sns {
+    float: none;
+  }
+
+  #footer {
+    text-align: center;
+    padding: 12px 8px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  iframe {
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+}
