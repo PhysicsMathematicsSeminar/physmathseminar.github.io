@@ -1059,3 +1059,32 @@ table.simple tr:last-child td {
     margin-bottom: 4px;
   }
 }
+
+/* Discourse timetables on wider screens: fill the content width, read abstracts left-aligned */
+@media screen and (min-width: 769px) {
+  #contents table.timetable {
+    width: 100% !important;
+    float: none !important;
+  }
+
+  #contents table.timetable td {
+    vertical-align: top;
+  }
+
+  #contents table.timetable td:first-child {
+    white-space: nowrap;
+  }
+
+  #contents table.timetable tbody td:nth-child(3):not([colspan]),
+  #contents table.timetable td:has(.talk-title) {
+    text-align: left !important;
+    line-height: 1.7;
+  }
+
+  #contents table.timetable .talk-title {
+    display: block;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 4px;
+  }
+}
