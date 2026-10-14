@@ -996,3 +996,66 @@ table.simple tr:last-child td {
   max-width: 100%;
   box-sizing: border-box;
 }
+
+/* Discourse timetables: stack each row as a card on narrow screens */
+@media screen and (max-width: 768px) {
+  #contents table.timetable {
+    display: block;
+    width: 100% !important;
+    float: none !important;
+    margin: 0 !important;
+    border: 0 !important;
+    overflow-x: visible;
+  }
+
+  table.timetable thead,
+  table.timetable tbody {
+    display: block;
+  }
+
+  #contents table.timetable thead tr + tr {
+    display: none;
+  }
+
+  #contents table.timetable tr {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid #c0c0c0;
+    margin-top: -1px;
+  }
+
+  table.timetable th,
+  table.timetable td {
+    display: block;
+    flex: 0 1 auto;
+    min-width: 0;
+    width: auto !important;
+    box-sizing: border-box;
+    border: 0 !important;
+    padding: 6px 8px !important;
+    text-align: left !important;
+  }
+
+  table.timetable thead th {
+    flex-basis: 100%;
+  }
+
+  table.timetable td[rowspan] {
+    flex-basis: 100%;
+    background-color: #e5e5e5;
+    font-weight: bold;
+  }
+
+  table.timetable td:has(.talk-title) {
+    flex-basis: 100%;
+    padding-top: 0 !important;
+    line-height: 1.7;
+  }
+
+  table.timetable .talk-title {
+    display: block;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 4px;
+  }
+}
