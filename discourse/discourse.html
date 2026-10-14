@@ -23,11 +23,17 @@
 
     <style type="text/css">
     		table.tbl3 {
-    			width: 600px;
+    			width: 100%;
     			border: 1px #c0c0c0 solid;
     			border-collapse: collapse;
-    			margin-left: 40px;
     			margin-bottom: 10px;
+    		}
+    		table.tbl3 thead th,
+    		table.tbl3 td:nth-child(2) {
+    			white-space: nowrap;
+    		}
+    		table.tbl3 thead th:first-child {
+    			width: 40%;
     		}
     		table.tbl3 th,
     		table.tbl3 td {
@@ -44,6 +50,56 @@
     		}
     		table.tbl3 tbody tr:hover {
     			background-color: #e5e5e5;
+    		}
+
+    		/* スマホでは1件を1枚のカードとして表示する */
+    		@media screen and (max-width: 768px) {
+    			#contents table.tbl3 {
+    				display: block;
+    				width: 100%;
+    				margin: 0 0 10px !important;
+    				border: 0;
+    			}
+    			#contents table.tbl3 thead {
+    				display: none;
+    			}
+    			#contents table.tbl3 tbody,
+    			#contents table.tbl3 tr {
+    				display: block;
+    			}
+    			#contents table.tbl3 tr {
+    				position: relative;
+    				border: 1px #c0c0c0 solid;
+    				margin-top: -1px;
+    				padding: 10px 12px;
+    				text-align: left;
+    			}
+    			#contents table.tbl3 td {
+    				display: inline;
+    				border: 0;
+    				padding: 0;
+    			}
+    			#contents table.tbl3 td:nth-child(1) {
+    				display: block;
+    				font-size: 15px;
+    				font-weight: bold;
+    			}
+    			#contents table.tbl3 td:nth-child(1) a::after {
+    				content: "";
+    				position: absolute;
+    				top: 0;
+    				right: 0;
+    				bottom: 0;
+    				left: 0;
+    			}
+    			#contents table.tbl3 td:nth-child(2),
+    			#contents table.tbl3 td:nth-child(3) {
+    				font-size: 12px;
+    				color: #555555;
+    			}
+    			#contents table.tbl3 td:nth-child(2)::after {
+    				content: "　";
+    			}
     		}
   	</style>
 
@@ -149,12 +205,12 @@
     			<td>慶應大学・早稲田大学</td>
         </tr>
         <tr>
-          <td><a href="discourse-2011.html">冬の大談話会2011</a></a></td>
+          <td><a href="discourse-2011.html">冬の大談話会2011</a></td>
           <td>2011</td>
     			<td>岡山大学・早稲田大学・北海道大学・東北大学・名古屋大学</td>
         </tr>
         <tr>
-          <td><a href="discourse-Lite.html">名古屋談話会Lite 第1回～第5回</a></a></td>
+          <td><a href="discourse-Lite.html">名古屋談話会Lite 第1回～第5回</a></td>
           <td>2012</td>
     			<td>名古屋大学</td>
         </tr>
@@ -219,7 +275,7 @@
     			<td>早稲田大学・慶応大学・東北大学・大阪府立大学</td>
         </tr>
         <tr>
-          <td><a href="2014/autumn_keio.html">秋だョ！全学年集合談話会 in 慶應</td>
+          <td><a href="2014/autumn_keio.html">秋だョ！全学年集合談話会 in 慶應</a></td>
           <td>2014</td>
     			<td>慶應大学</td>
         </tr>
